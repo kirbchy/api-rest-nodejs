@@ -26,8 +26,6 @@ async function run() {
         telefono: a.phone,        // Spring usa 'telefono'
         experiencia: a.speciality, // Spring usa 'experiencia'
         contrasena: a.contraseña   // sin tilde para Java
-        // Si tu Spring exige el prefijo {noop}, usa:
-        // contrasena: `{noop}${a.contraseña}`
       };
 
       const { data } = await http.post('/api/arbitros', payload);
